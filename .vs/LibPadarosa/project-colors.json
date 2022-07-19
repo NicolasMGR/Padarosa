@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "19194901-c8df-4ea0-881b-671dc9e21baa": {
+      "ProjectGuid": "19194901-c8df-4ea0-881b-671dc9e21baa",
+      "DisplayName": "LibPadarosa",
+      "ColorIndex": 0
+    },
+    "b50c2ca3-4dfd-4cc0-8408-b62b659d8bcb": {
+      "ProjectGuid": "b50c2ca3-4dfd-4cc0-8408-b62b659d8bcb",
+      "DisplayName": "Padarosa",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
