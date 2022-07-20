@@ -29,8 +29,30 @@ namespace Padarosa
                 var u = new LibPadarosa.Usuario();
                 u.Email= txtEmail.Text;
                 u.Senha= txtSenha.Text;
-                var resultado = LibPadarosa.Banco.UsuarioDAO.Logar(u);
-                MessageBox.Show(resultado.Rows.Count.ToString());
+                var resultado =Banco.UsuarioDAO.Logar(u);
+                //Verificar se o banco retornou algum dado:
+                if(resultado.Rows.Count == 0)
+                {
+                    MessageBox.Show("Usuário ou senha incorreto.");
+                }
+                else
+                {
+                    //Continuar o progama:
+                    //Guardar as informções vindas do bd:
+                    u.NomeCompleto = resultado.Rows[0]["nome_completo"].ToString();
+                    u.Id = int.Parse(resultado.Rows[0]["id"].ToString());
+                    //Abrir a janela:
+                    var menuprincipal = new Formularios.MenuPrincipal(u);
+                    //Esconder janela atual:
+                    Hide();
+                    //Mostrar a nova:
+                    menuprincipal.ShowDialog();
+                    //Ao sair da anterior, mostrar novamente:
+                    Show();
+                    //Limpar campos de e-mail e senha:
+                    txtEmail.Clear();
+                    txtSenha.Clear();
+                }
             }
         }
     }

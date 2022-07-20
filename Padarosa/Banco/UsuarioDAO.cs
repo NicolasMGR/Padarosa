@@ -1,4 +1,5 @@
 ﻿using LibPadarosa;
+using MySqlConnector;
 using System.Data;
 
 namespace Padarosa.Banco
@@ -16,7 +17,7 @@ namespace Padarosa.Banco
             MySqlCommand cmd = new MySqlCommand(comando, con);
             // Subsituir o @termo pela variavel vinda por parâmetro
             cmd.Parameters.AddWithValue("@email", u.Email);
-            cmd.Parameters.AddWithValue("@senha", u.Senha);
+            cmd.Parameters.AddWithValue("@senha", EasyEncryption.SHA.ComputeSHA256Hash(u.Senha));
 
             cmd.Prepare();
             tabela.Load(cmd.ExecuteReader());
