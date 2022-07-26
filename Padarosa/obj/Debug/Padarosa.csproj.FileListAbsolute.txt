@@ -30,3 +30,5 @@ C:\Users\nicolas.mgrodrigues1\Documents\GitHub\Padarosa\Padarosa\obj\Debug\Padar
 C:\Users\nicolas.mgrodrigues1\Documents\GitHub\Padarosa\Padarosa\obj\Debug\Padarosa.pdb
 C:\Users\nicolas.mgrodrigues1\Documents\GitHub\Padarosa\Padarosa\obj\Debug\Padarosa.Formularios.MenuPrincipal.resources
 C:\Users\nicolas.mgrodrigues1\Documents\GitHub\Padarosa\Padarosa\obj\Debug\Padarosa.Formularios.MenuUsuarios.resources
+C:\Users\nicolas.mgrodrigues1\Documents\GitHub\Padarosa\Padarosa\obj\Debug\Padarosa.Formularios.MenuProdutos.resources
+C:\Users\nicolas.mgrodrigues1\Documents\GitHub\Padarosa\Padarosa\obj\Debug\Padarosa.Formularios.MenuProdutos1.resources

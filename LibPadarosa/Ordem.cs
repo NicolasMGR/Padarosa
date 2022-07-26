@@ -13,6 +13,13 @@ namespace LibPadarosa
         public int IdProduto { get; set; }
         public int Quantidade { get; set; }
         public int IdResp { get; set; }
-        public bool Situacao { get; set; }
+        public bool Situacao { get; set; }       
+        public string NomeProduto { get; set; }
+        public double Preco { get; set; }
+        public int IdCategoria { get; set; }
+        public int IdRespCadastro { get; set; }
+
+
     }
+    
 }

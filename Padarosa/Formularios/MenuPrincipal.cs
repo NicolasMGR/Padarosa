@@ -21,6 +21,11 @@ namespace Padarosa.Formularios
             InitializeComponent();
             _u = u;
             lblFrase.Text = "Olá, " + u.NomeCompleto + "! Escolha uma opção:";
+            //Ocultar o botão de usuario de todos, exceto do adm:
+            if(u.Id != 1)
+            {
+                btnUsuarios.Visible = false;
+            }
         }
 
         private void MenuPrincipal_Load(object sender, EventArgs e)
@@ -43,6 +48,12 @@ namespace Padarosa.Formularios
             var menuusuarios = new MenuUsuarios(_u);
             menuusuarios.ShowDialog();
             
+        }
+
+        private void btnProdutos_Click(object sender, EventArgs e)
+        {
+            var menuprodutos = new MenuProdutos1(_u);
+            menuprodutos.ShowDialog();
         }
     }
 }
